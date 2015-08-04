@@ -1,0 +1,16 @@
+
+<h1>Subjects#edit</h1>
+<%= form_for(@subject) do |f| %>
+
+      <%= f.label :title %>
+      <%= f.text_field :title, class: 'form-control' %>
+
+      <%= f.label :position %>
+      <%= f.number_field :position, class: 'form-control' %>
+
+      <%= f.label :visible %>
+      <%= f.check_box :visible, class: 'form-control' %>
+
+      <%= f.submit "Сохранить", class: "btn btn-primary" %>
+ <% end %>
+
